@@ -1,0 +1,6 @@
+dask[complete]
+folium
+jupyterlab
+odc-stac
+pystac-client
+xarray

@@ -1,5 +1,8 @@
+coiled
 dask[complete]
 folium
+geopandas
+hvplot
 jupyterlab
 odc-stac
 pystac-client

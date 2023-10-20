@@ -50,17 +50,9 @@ Understanding this, all we need to do to run our jupyter server is the following
 ```
 
 Running this command will trigger coiled to spin up a new instance to run the
-server, and it will open a borswer tab for jupyter lab once it is running.
-
-To load the notebooks from this repo, open a terminal in jupyter lab and clone
-this repo with the following command:
-
-```cmdline
-❯ git clone https://github.com/Element84/cng-workshop
-```
-
-Then, simply browse to the desired notebook in the jupyter lab file explorer,
-such as `./notebooks/sentinel2.ipynb`.
+server, and it will open a borswer tab for jupyter lab once it is running. The
+notebooks and AOIs from this repo are built into the image, so simply browse to
+the desired notebook in the file explorer and open it.
 
 ## Building the container image
 
@@ -75,3 +67,12 @@ For Element 84 maintainers, `./scripts/build.bash` is provided to automate
 building the image for both linux/amd64 and linux/arm64 and pushing those
 images to the ECR repo, tagged as latest. Note that AWS credentials with write
 access to that ECR repo in the sandbox account are requried.
+
+`git` is built into the image, and can be a useful when testing changes to the
+notebooks or loading notebooks from other sourcesi without having to build them
+into the image. For example, to clone this repo into the environment to test
+changes, open a terminal in jupyter lab and run the following command:
+
+```cmdline
+❯ git clone https://github.com/Element84/cng-workshop
+```

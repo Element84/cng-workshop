@@ -1,0 +1,14 @@
+# Copyright ©2021. Element 84, Inc. All Rights Reserved.
+version:                "3"
+services:
+  geonotebook:
+      build: .
+      image: cng-workshop
+      env_file: .env
+      platform: "linux/amd64"
+      volumes:
+        - ./:/var/task/work
+      ports:
+        - 18888:18888
+      entrypoint: |
+        jupyter lab --no-browser --ip=0.0.0.0 --port=18888 --allow-root

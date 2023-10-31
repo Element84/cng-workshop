@@ -7,4 +7,5 @@ hvplot
 jupyterlab
 odc-stac
 pystac-client
+stacterm>=0.2.0rc4
 xarray

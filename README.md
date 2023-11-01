@@ -9,8 +9,8 @@ deck](https://docs.google.com/presentation/d/1iSAwpxt6nSkiq3EXwxK4DgW0MMLdJqzDh7
 ## Setting up local environment
 
 To run the notebooks with coiled one first needs to setup a local environment
-with coiled. The easiest way to do this is typically using a python virtual and
-`pip`:
+with coiled. The easiest way to do this is typically using a python virtual
+environment and `pip`:
 
 ```cmdline
 # create a local working directory and change into it
@@ -28,8 +28,6 @@ with coiled. The easiest way to do this is typically using a python virtual and
 
 # login to coiled
 ❯ coiled login
-
-
 ```
 
 Feel free to use any other prefered python environment/package managers (like

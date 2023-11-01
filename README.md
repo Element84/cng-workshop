@@ -39,15 +39,12 @@ Coiled allows launching jupyter on an ephemeral cloud machine with a
 pre-configured software environment. The included Dockerfile defines a
 geospatial container image and python environment suitable for running the
 notebooks in the repo; this is published as a public image to AWS ECR with the
-image `public.ecr.aws/q2i2x3t4/e84-sandbox/coiled-demo:latest`. We can use this
-container image with a coiled software environment (the included script
-`./scripts/create-software-env.py`) can be run to setup a software environment
-called `cng-workshop` if it does not already exist in your coiled context).
+image `public.ecr.aws/q2i2x3t4/e84-sandbox/coiled-demo:latest`.
 
 Understanding this, all we need to do to run our jupyter server is the following:
 
 ```cmdline
-❯ coiled notebook start --software cng-workshop --account element84-demo-workspace
+❯ coiled notebook start --container public.ecr.aws/q2i2x3t4/e84-sandbox/coiled-demo:latest --account element84-demo-workspace
 ```
 
 Running this command will trigger coiled to spin up a new instance to run the

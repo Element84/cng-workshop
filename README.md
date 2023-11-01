@@ -3,6 +3,9 @@
 This repository includes the container environment build scripts and notebooks
 for use in the Element 84 workshop "Introduction to Cloud Native Geospatial".
 
+For more context on Cloud Native Geospatial please see [the workshop slide
+deck](https://docs.google.com/presentation/d/1iSAwpxt6nSkiq3EXwxK4DgW0MMLdJqzDh7lj1mC119Y/edit#slide=id.p).
+
 ## Setting up local environment
 
 To run the notebooks with coiled one first needs to setup a local environment

@@ -70,7 +70,7 @@ images to the ECR repo, tagged as latest. Note that AWS credentials with write
 access to that ECR repo in the sandbox account are requried.
 
 `git` is built into the image, and can be a useful when testing changes to the
-notebooks or loading notebooks from other sourcesi without having to build them
+notebooks or loading notebooks from other sources without having to build them
 into the image. For example, to clone this repo into the environment to test
 changes, open a terminal in jupyter lab and run the following command:
 

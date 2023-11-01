@@ -49,7 +49,7 @@ called `cng-workshop` if it does not already exist in your coiled context).
 Understanding this, all we need to do to run our jupyter server is the following:
 
 ```cmdline
-❯ coiled notebook start --software cng-workshop
+❯ coiled notebook start --software cng-workshop --account element84-demo-workspace
 ```
 
 Running this command will trigger coiled to spin up a new instance to run the
